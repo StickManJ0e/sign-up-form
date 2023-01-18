@@ -7,12 +7,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <div class="graphic-section"></div>
-    <div class="main-section"></div>
+    <div class="graphic-section">
+        <div class="image-credit">Photo by Ahmed Zayan</div>
+        <div class="banner">Sign Up</div>
+    </div>
+    <div class="content-section">
+        <div class="content-text">
+            <p>This is not a real online service! This will definetly not take your information and
+                do malicious things with it. Sign up now to get started.</p>
+            <p>You know you want to :D</p>
+        </div>
+        <form id="sign-up-form">
+            <legend>Let's get started!</legend>
+
+            <div class="inputs">
+                <div class="input-position">
+                    <label for="first_name">First Name</label>
+                    <input type="text" id="first_name" name="first_name" required>
+                </div>
+                <div class="input-position">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" id="last_name" name="last_name" required>
+                </div>
+                <div class="input-position">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-position">
+                    <label for="phone_number">Phone Number</label>
+                    <input type="number" id="phone_number" name="phone_number" required>
+                </div>
+                <div class="input-position">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="input-position">
+                    <label for="confirm_password">Confirm Password</label>
+                    <input type="password" id="confirm_password" name="confirm_password" required>
+                    <p class="input-validity-message">Passwords do not match.</p>
+                </div>
+            </div>
+        </form>
+        <div class="content-buttons">
+            <button type="submit" form="sign-up-form">Create Account</button>
+            <p>Already have an account? <a href="">Log in</a></p>
+        </div>
+    </div>
 </body>
 
 </html>
