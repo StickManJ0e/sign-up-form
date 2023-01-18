@@ -136,11 +136,6 @@ input + p {
     font-size: 0;
 }
 
-.input-validity {
-    font-size: 12px;
-    color: red;
-}
-
 .invalid {
     border-color: red;
 }

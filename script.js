@@ -12,11 +12,12 @@ function validatePassword() {
 
 passwordConfirmSpace.addEventListener('input', () => {
     if (validatePassword() === false) {
-        passwordValidityMessage.classList.add('input-validity');
+        passwordConfirmSpace.setCustomValidity('Passwords do not match');
+        passwordConfirmSpace.reportValidity();
         return false;
     }
     else {
-        passwordValidityMessage.classList.remove('input-validity');
+        passwordConfirmSpace.setCustomValidity('');
         return true;
     }
 })
